@@ -1,3 +1,8 @@
+use alstroemeria;
+extern crate pollster;
+
 fn main() {
-    println!("Hello, world!");
+  pollster::block_on(alstroemeria::run());
+  println!("Hello, world!");
 }
+
